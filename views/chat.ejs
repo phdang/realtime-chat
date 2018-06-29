@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="/stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <form action="">
+      <div class="join-room-msg"></div>
+      <textarea id="m" autocomplete="off" autofocus></textarea><button>Gửi</button>
+    </form>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script> var username = '<%= username %>' </script>
+  <script src="javascripts/chat.js"></script>
+</html>
