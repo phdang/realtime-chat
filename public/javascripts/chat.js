@@ -79,20 +79,20 @@ $(function() {
         msg.username +
         ': ' +
         '</p>' +
-        '<p class="message-content">' +
+        '<span class="message-content">' +
         '<pre>' +
         msg.message +
-        '</p>'
+        '</span>'
     );
     var others = $('<li class="others">').html(
       '<p class="message-username">' +
         msg.username +
         ': ' +
         '</p>' +
-        '<p class="message-content">' +
+        '<span class="message-content">' +
         '<pre>' +
         msg.message +
-        '</p>'
+        '</span>'
     );
     if (msg.message.trim() && msg.username) {
       if (msg.username === username) {
