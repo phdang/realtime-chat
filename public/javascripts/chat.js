@@ -80,7 +80,6 @@ $(function() {
         ': ' +
         '</p>' +
         '<span class="message-content">' +
-        '<pre>' +
         msg.message +
         '</span>'
     );
@@ -90,7 +89,6 @@ $(function() {
         ': ' +
         '</p>' +
         '<span class="message-content">' +
-        '<pre>' +
         msg.message +
         '</span>'
     );
