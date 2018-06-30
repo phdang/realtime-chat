@@ -6,7 +6,7 @@ $(function() {
     navigator.platform == 'iPod' ||
     navigator.platform == 'Linux armv6l'
   ) {
-    $('form button').css({ marginBottom: '3px' });
+    $('form button').css({ marginBottom: '5px' });
   }
   socket.emit('join room', { username: username });
   socket.on('join room', function(msg) {
