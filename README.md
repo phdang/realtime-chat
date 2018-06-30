@@ -6,17 +6,19 @@ Cùng tạo kênh chat một cách đơn giản với nodeJs, Express, MongoDB v
 
 Project này chỉ nhằm mục đích giới thiệu cho mọi người với ứng dụng realtime của Socket IO cũng như dần làm quen với các event
 và những điểm mạnh mà package này đem lại cho chúng ta
+
 ### Kiến thức cần biết
 
 nodeJs, mongoDB và Javascript cơ bản.
 Kiểm tra xem máy đã cài đặt node
+
 ```
 npm -v
 ```
 
 ### Cài đặt
 
-Đầu tiên sau clone về các bạn chạy lệnh
+Đầu tiên sau khi clone về các bạn chạy lệnh
 
 ```
 npm install
@@ -28,12 +30,13 @@ Sau đó cài đặt mongoDB và đưa đường dẫn vào hằng số MONGO_CO
 npm start
 ```
 
-Lưu ý server chạy trên port mặc định sẽ là 6069 nếu trong trường trùng port, các bạn vào thư mục
+Lưu ý server chạy trên port mặc định sẽ là 6069 nếu trong trường hợp trùng port, các bạn vào thư mục
 
 ```
 realtime/bin/www
 ```
-để thay đổi cho phù hợp
+
+để thay đổi lại port cho phù hợp
 
 ## Chạy thử
 
@@ -45,8 +48,8 @@ https://secret-forest-78336.herokuapp.com/
 
 ## Được xây dựng từ
 
-* nodeJs
-* express generator
-* Ejs templating engine
-* Mongoose
-* Socket IO
+- nodeJs
+- express generator
+- Ejs templating engine
+- Mongoose
+- Socket IO
