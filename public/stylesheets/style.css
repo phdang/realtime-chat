@@ -137,6 +137,9 @@ form button {
   }
 }
 @media (max-width: 576px) {
+  .messages {
+    flex: 4 0px;
+  }
   form textarea {
     width: 80%;
     margin-right: 1%;
