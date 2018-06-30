@@ -144,7 +144,7 @@ form button {
   }
   form button {
     width: 18%;
-    bottom: 1px;
+    bottom: 3px;
     border-radius: 5px;
   }
   .user-name {
