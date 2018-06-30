@@ -8,8 +8,8 @@ Project này chỉ nhằm mục đích giới thiệu cho mọi người với �
 và những điểm mạnh mà package này đem lại cho chúng ta
 ### Kiến thức cần biết
 
-nodeJs, mongoDB và Javascript cơ bản
-Kiểm tra sau khi đã cài đặt node
+nodeJs, mongoDB và Javascript cơ bản.
+Kiểm tra xem máy đã cài đặt node
 ```
 npm -v
 ```
