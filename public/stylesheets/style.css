@@ -44,6 +44,7 @@ ul {
 .user-status-on,
 .user-status-off {
   width: 14px;
+  height: 14px;
   border-radius: 50%;
 }
 .user-status-on {
@@ -125,5 +126,9 @@ form button {
     width: 18%;
     bottom: 1px;
     border-radius: 5px;
+  }
+  .user-status-on,
+  .user-status-off {
+    width: 17px;
   }
 }
