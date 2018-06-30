@@ -7,7 +7,16 @@
     <link href="/stylesheets/style.css" rel="stylesheet">
   </head>
   <body>
-    <ul id="messages"></ul>
+    <section class="wrapper">
+      <div class="users">
+        <ul id="users"></ul>
+        <a href="/logout">Sign out </a>
+      </div>
+      <div class="messages">
+        <ul id="messages"></ul>
+      </div>
+
+    </section>
     <form action="">
       <div class="join-room-msg"></div>
       <textarea id="m" autocomplete="off" autofocus></textarea><button>Gửi</button>

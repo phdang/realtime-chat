@@ -3,6 +3,14 @@ $(function() {
 
   socket.emit('join room', { username: username });
   socket.on('join room', function(msg) {
+    $('#users').html('');
+    for (let user of msg.users) {
+      $('#users').append(
+        '<li><div class="user-name"><strong>' +
+          user +
+          '</strong></div><div class="user-status-on"></div></li>'
+      );
+    }
     var sndJoin = new Audio('/audio/filling-your-inbox.mp3'); // buffers automatically when created
     sndJoin.play();
     $('.join-room-msg').html(msg.message);
@@ -19,6 +27,10 @@ $(function() {
     }, 3000);
   });
   socket.on('left room', function(msg) {
+    var userleftElement = $('#users > li')[msg.indexUserLeft];
+    var statusElement = $(userleftElement).find('.user-status-on')[0];
+    statusElement.classList.remove('user-status-on');
+    statusElement.classList.add('user-status-off');
     var sndLeft = new Audio('/audio/stopRecording.mp3'); // buffers automatically when created
     sndLeft.play();
     $('.join-room-msg').html(msg.message);
