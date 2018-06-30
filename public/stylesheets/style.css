@@ -64,7 +64,7 @@ user-status-off {
   background-color: #78909c;
 }
 form {
-  background: #000;
+  background: #ffa726;
   padding: 3px;
   position: fixed;
   bottom: 0;
@@ -123,7 +123,7 @@ form button {
 .join-room-msg {
   margin: 5px;
   padding: 10px;
-  color: #ff8a65;
+  color: #01579b;
   font-size: 16px;
 }
 @media (max-width: 1024px) {
