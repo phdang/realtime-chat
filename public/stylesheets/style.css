@@ -24,9 +24,9 @@ form button {
   width: 9%;
   background: rgb(130, 224, 255);
   border: none;
-  padding: 16px 10px;
+  padding: 17px 10px;
   position: fixed;
-  bottom: 2px;
+  bottom: 3px;
   font-size: 16px;
 }
 #messages {
@@ -77,6 +77,7 @@ form button {
   }
   form button {
     width: 18%;
-    bottom: 4px;
+    bottom: 1px;
+    border-radius: 5px;
   }
 }

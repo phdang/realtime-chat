@@ -3,6 +3,8 @@ $(function() {
 
   socket.emit('join room', { username: username });
   socket.on('join room', function(msg) {
+    var sndJoin = new Audio('/audio/filling-your-inbox.mp3'); // buffers automatically when created
+    sndJoin.play();
     $('.join-room-msg').html(msg.message);
     setTimeout(function() {
       if (msg.onlineUsers > 2) {
@@ -17,6 +19,8 @@ $(function() {
     }, 3000);
   });
   socket.on('left room', function(msg) {
+    var sndLeft = new Audio('/audio/stopRecording.mp3'); // buffers automatically when created
+    sndLeft.play();
     $('.join-room-msg').html(msg.message);
     setTimeout(function() {
       if (msg.onlineUsers > 1) {
@@ -79,23 +83,27 @@ $(function() {
         msg.username +
         ': ' +
         '</p>' +
-        '<span class="message-content">' +
+        '<p class="message-content">' +
         msg.message +
-        '</span>'
+        '</p>'
     );
     var others = $('<li class="others">').html(
       '<p class="message-username">' +
         msg.username +
         ': ' +
         '</p>' +
-        '<span class="message-content">' +
+        '<p class="message-content">' +
         msg.message +
-        '</span>'
+        '</p>'
     );
     if (msg.message.trim() && msg.username) {
       if (msg.username === username) {
+        var sndAuth = new Audio('/audio/shut-your-mouth.mp3'); // buffers automatically when created
+        sndAuth.play();
         $('#messages').append(auth);
       } else {
+        var sndOthers = new Audio('/audio/inquisitiveness.mp3'); // buffers automatically when created
+        sndOthers.play();
         $('#messages').append(others);
       }
     }
