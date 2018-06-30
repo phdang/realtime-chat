@@ -106,6 +106,8 @@ $(function() {
         sndOthers.play();
         $('#messages').append(others);
       }
+    } else {
+      location.assign('/');
     }
     var scrollBottom = $(window).scrollTop() + $(window).height();
     $(window).scrollTop(scrollBottom);
