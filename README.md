@@ -1,6 +1,6 @@
 # realtime-chat
 
-Cùng tạo kênh chat một cách đơn giản với nodeJs, Express, MongoDB và Socket OI
+Cùng tạo kênh chat một cách đơn giản với nodeJs, Express, MongoDB và Socket IO
 
 ## Bắt đầu
 
