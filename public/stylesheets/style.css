@@ -36,6 +36,12 @@ ul {
   justify-content: space-between;
   font: Verdana, sans-serif;
 }
+.user-name {
+  flex: 10 0px;
+}
+.user-status-on,
+user-status-off {
+}
 
 .messages {
   flex: 6 0px;
@@ -45,6 +51,7 @@ ul {
 .user-status-off {
   width: 14px;
   height: 14px;
+  flex: 1 0px;
   border-radius: 50%;
 }
 .user-status-on {
@@ -116,6 +123,16 @@ form button {
   color: #ff8a65;
   font-size: 16px;
 }
+@media (max-width: 1024px) {
+  .user-name {
+    flex: 8 0px;
+  }
+}
+@media (max-width: 768px) {
+  .user-name {
+    flex: 5 0px;
+  }
+}
 @media (max-width: 576px) {
   form textarea {
     width: 80%;
@@ -127,8 +144,7 @@ form button {
     bottom: 1px;
     border-radius: 5px;
   }
-  .user-status-on,
-  .user-status-off {
-    width: 17px;
+  .user-name {
+    flex: 3 0px;
   }
 }
