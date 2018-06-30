@@ -1,5 +1,6 @@
 $(function() {
   var socket = io();
+  //fix position button for ios
   if (
     navigator.platform == 'iPad' ||
     navigator.platform == 'iPhone' ||
@@ -26,7 +27,7 @@ $(function() {
         $('.join-room-msg').html('Số người đang online: ' + msg.onlineUsers);
       } else if (msg.onlineUsers == 2) {
         $('.join-room-msg').html(
-          'Đã có người vào chat chung với bạn. Hãy làm quen nhau đi nào :D'
+          'Đã có người vào chat chung với bạn. Hai bạn hãy làm quen với nhau đi nào :D'
         );
       } else {
         $('.join-room-msg').html('Phòng chat này chỉ có mình bạn :((');
