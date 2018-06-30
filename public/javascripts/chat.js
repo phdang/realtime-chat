@@ -1,6 +1,13 @@
 $(function() {
   var socket = io();
-
+  if (
+    navigator.platform == 'iPad' ||
+    navigator.platform == 'iPhone' ||
+    navigator.platform == 'iPod' ||
+    navigator.platform == 'Linux armv6l'
+  ) {
+    $('form button').css({ position: 'relative', bottom: '3px' });
+  }
   socket.emit('join room', { username: username });
   socket.on('join room', function(msg) {
     $('#users').html('');
