@@ -85,9 +85,6 @@ $(function() {
         this.value =
           content.substring(0, caret - 1) +
           content.substring(caret, content.length);
-        if (!username) {
-          location.reload();
-        }
         $('form').submit();
       }
     }
@@ -126,8 +123,6 @@ $(function() {
         sndOthers.play();
         $('#messages').append(others);
       }
-    } else {
-      location.assign('/');
     }
     var scrollBottom = $(window).scrollTop() + $(window).height();
     $(window).scrollTop(scrollBottom);
