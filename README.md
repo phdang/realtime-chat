@@ -55,9 +55,7 @@ realtime/bin/www
 
 Project đang được chạy thử trên heroku các bạn có thể vào đường dẫn sau để xem demo trực tiếp
 
-```
 [Realtime Chat](https://secret-forest-78336.herokuapp.com/)
-```
 
 ## Được xây dựng từ
 
