@@ -8,7 +8,7 @@ Project này chỉ nhằm mục đích giới thiệu cho mọi người với �
 và những điểm mạnh mà package này đem lại cho chúng ta
 
 ![Realtime Chat](https://github.com/phdang/realtime-chat/blob/master/public/images/demo1.png)
-![Realtime Chat](https://github.com/phdang/realtime-chat/blob/master/public/images/demo1.png)
+![Realtime Chat](https://github.com/phdang/realtime-chat/blob/master/public/images/demo2.png)
 
 ### Kiến thức cần biết
 
