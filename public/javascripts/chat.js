@@ -1,4 +1,7 @@
 $(function() {
+  if (!username) {
+    location.assign('/');
+  }
   var socket = io();
   //fix position button for ios
   if (
@@ -33,7 +36,7 @@ $(function() {
           'Đã có người vào chat chung với bạn. Hai bạn hãy làm quen với nhau đi nào :D'
         );
       } else {
-        $('.join-room-msg').html('Phòng chat này chỉ có mình bạn :((');
+        $('.join-room-msg').html('Phòng chat này hiện chỉ có mình bạn :((');
       }
     }, 3000);
   });
