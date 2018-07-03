@@ -1,7 +1,4 @@
 $(function() {
-  if (!username) {
-    location.assign('/');
-  }
   var socket = io();
   //fix position button for ios
   if (
@@ -56,6 +53,15 @@ $(function() {
       }
     }, 3000);
   });
+
+  //Resize user status
+
+  $(window).resize(function() {
+    var width = document.getElementsByClassName('user-status-on')[0]
+      .offsetWidth;
+    $('.user-status-on').css({ height: width + 'px' });
+  });
+
   // detect enter or shift enter if enter submit form else break line for textarea;
   function getCaret(el) {
     if (el.selectionStart) {
