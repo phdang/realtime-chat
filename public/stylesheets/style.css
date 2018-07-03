@@ -53,7 +53,6 @@ user-status-off {
 .user-status-on,
 .user-status-off {
   width: 14px;
-  height: 14px;
   flex: 1 0px;
   border-radius: 50%;
 }
@@ -76,6 +75,7 @@ form textarea {
   width: 90%;
   margin-right: 0.5%;
   font-size: 16px;
+  border-radius: 10px;
   resize: none;
 }
 form button {
@@ -86,6 +86,7 @@ form button {
   position: fixed;
   bottom: 3px;
   font-size: 16px;
+  border-radius: 5px;
 }
 #messages {
   list-style-type: none;
@@ -153,6 +154,6 @@ form button {
     border-radius: 5px;
   }
   .user-name {
-    flex: 3 0px;
+    flex: 4 0px;
   }
 }
