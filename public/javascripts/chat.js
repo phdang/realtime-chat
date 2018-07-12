@@ -19,8 +19,9 @@ $(function() {
           '</strong></div><div class="user-status-on"></div></li>'
       );
     }
-    var width = document.getElementsByClassName('user-status-on')[0]
-      .offsetWidth;
+    var width = parseInt(
+      document.getElementsByClassName('user-status-on')[0].offsetWidth
+    );
     $('.user-status-on').css({ height: width + 'px' });
     var sndJoin = new Audio('/audio/filling-your-inbox.mp3'); // buffers automatically when created
     sndJoin.play();
