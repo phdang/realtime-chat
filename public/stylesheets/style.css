@@ -39,7 +39,7 @@ ul {
   font: Verdana, sans-serif;
 }
 .user-name {
-  flex: 10 0px;
+  flex: 12 0px;
 }
 .user-status-on,
 user-status-off {
