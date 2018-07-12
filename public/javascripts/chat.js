@@ -57,8 +57,9 @@ $(function() {
   //Resize user status
 
   $(window).resize(function() {
-    var width = document.getElementsByClassName('user-status-on')[0]
-      .offsetWidth;
+    var width = parseInt(
+      document.getElementsByClassName('user-status-on')[0].offsetWidth
+    );
     $('.user-status-on').css({ height: width + 'px' });
   });
 
